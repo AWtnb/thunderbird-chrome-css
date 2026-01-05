@@ -72,13 +72,17 @@ folder pane
 preview pane
 */
 
+#attachmentBar {
+  border-top: 2px solid #ffea00 !important;
+}
+
+button#attachmentToggle {
+  color: #ffea00 !important;
+}
+
 #attachment-view-toolbar,
 #attachmentList,
 #attachmentList * {
   background-color: #ffea00 !important;
   color: #123456 !important;
-}
-
-#expandedHeadersBottomBox {
-  min-height: 60px !important;
 }
