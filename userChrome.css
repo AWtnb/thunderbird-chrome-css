@@ -17,12 +17,14 @@ message-list pane
   margin-inline-start: calc(16px * min(var(--thread-level), 3)) !important;
 }
 
-#threadTree tr[is="thread-row"] .subject-line:not([style*="--thread-level: 0"]) {
+#threadTree
+  tr[is="thread-row"]
+  .subject-line:not([style*="--thread-level: 0"]) {
   color: #acacac !important;
 }
 
 #threadTree tr[is="thread-row"] {
-  font-size: 12px;
+  font-size: 14px !important;
   color: #c9c9c9 !important;
   line-height: 2;
 }
@@ -45,7 +47,9 @@ message-list pane
 }
 
 /* unread message */
-#threadTree .table-layout.children[data-properties~="hasUnread"][data-properties~="read"].collapsed *,
+#threadTree
+  .table-layout.children[data-properties~="hasUnread"][data-properties~="read"].collapsed
+  *,
 #threadTree tr[data-properties~="unread"] * {
   color: tomato !important;
 }
